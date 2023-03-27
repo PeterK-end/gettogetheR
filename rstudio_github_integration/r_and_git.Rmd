@@ -14,7 +14,6 @@ date: |
   | Peter Kannewitz                       
   | peter.kannewitz@uni-leipzig.de
   |
-  | 
   |                                                                                     12. April 2023 
 fontsize: 9 pt
 output: 
@@ -35,5 +34,36 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 
 \tableofcontents
 
-## Vorbereitung
+## GetTogetheR
+
+- Veranstaltung vorstellen
+
+## R und Git
+
+- Wie kommen wir auf das Thema
+- Was wir machen (Kurzeinstieg zum Thema, Sammeln und Bereitstellen von Ressourcen zum Einstieg)
+- Was wir nicht machen (Tutorial zum mitmachen)
+
+## Was ist Git?
+
+
+## Git und RStudio
+
+- Was brauch man alles? (Account bei einem Git-Hoster, SSH/GPG-Keys, Git auf dem Rechner, aktuelle RStudio Version, ...)
+
+## Warum sich die Mühe machen? 
+
+- ...
+
+## Diskussion
+
+- Frage: welche Erfahrung habt Ihr zum Thema R und Git gemacht?
+
+## Nützliche Ressourcen zum Thema
+
+- https://r-bio.github.io/intro-git-rstudio/ (Einstiegs Tutorial)
+- https://posit.co/resources/videos/managing-part-2-github-and-rstudio/ (Video zum Einstieg)
+- https://happygitwithr.com/ (Umfassende Referenz)
+
+
 
