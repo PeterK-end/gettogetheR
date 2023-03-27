@@ -1,0 +1,39 @@
+---
+title: |
+  | GetTogetheR 
+  |
+subtitle: |
+  |
+  | Git und R
+date: | 
+  |
+  | Jonas Frost
+  | jonas.frost@studserv.uni-leipzig.de
+  |
+  |
+  | Peter Kannewitz                       
+  | peter.kannewitz@uni-leipzig.de
+  |
+  | 
+  |                                                                                     12. April 2023 
+fontsize: 9 pt
+output: 
+  beamer_presentation:
+    includes:
+      in_header: preambel.tex
+header-includes: 
+  - \AtBeginDocument{\title[R Kurs]{\vspace{1cm} GetTogetheR!}}
+  - \AtBeginDocument{\author[Peter Kannewitz \& Jonas Frost]{ }}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
+```
+
+
+## Ablauf
+
+\tableofcontents
+
+## Vorbereitung
+
