@@ -46,6 +46,31 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 
 ## Was ist Git?
 
+```{r, echo=FALSE, out.width='23%', fig.align='left'}
+knitr::include_graphics("git_logo.png")
+```
+
+
+- Programm zur Versionskontrolle
+  - kann komplett lokal genutzt werden
+  - Änderungen werden Schrittweise durchgeführt (Commits)
+  - Änderungen können Rückgängig gemacht werden (revert)
+  - Ältere Versionen des Projekts können wieder hergestellt werden
+  - Verschiedene Versionen des Projekts können gleichzeitig bearbeitet werden und später zusammengeführt (Branching)
+  
+## Git Branching  
+
+```{r, echo=FALSE, out.width='80%', fig.align='center', fig.cap="Inkrementale Arbeit an einem Projekt"}
+knitr::include_graphics("git_branching.png")
+```
+
+## Git Hoster (Remote Git-Repository)
+
+```{r, echo=FALSE, out.width='50%', fig.align='center', fig.cap="Zusammenarbeit über ein Remote Repository"}
+knitr::include_graphics("git_commiting.png")
+```
+
+- Git-Hoster: [\textcolor{blue}{GitHub}](https://github.com/), [\textcolor{blue}{GitLab}](https://about.gitlab.com/), [\textcolor{blue}{Gitea}](https://gitea.io/en-us/), ...
 
 ## Git und RStudio
 
@@ -64,6 +89,12 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 - https://r-bio.github.io/intro-git-rstudio/ (Einstiegs Tutorial)
 - https://posit.co/resources/videos/managing-part-2-github-and-rstudio/ (Video zum Einstieg)
 - https://happygitwithr.com/ (Umfassende Referenz)
+
+## Bildquellen
+
+- https://geniusee.com/storage/app/media/blog/blog223_git_branching_model/GitHub_Flow.png
+- https://git-scm.com/images/logo@2x.png
+- https://www.inflectra.com/Images/Product-Imagery/Git.png
 
 
 

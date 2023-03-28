@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/nixos.org) (preloaded format=pdflatex 1980.1.1)  27 MAR 2023 11:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/nixos.org) (preloaded format=pdflatex 1980.1.1)  28 MAR 2023 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1426,27 +1426,45 @@ Overfull \hbox (1.18056pt too wide) has occurred while \output is active
 [4
 
 ]
+<git_logo.png, id=53, 220.825pt x 92.345pt>
+File: git_logo.png Graphic file (type png)
+<use git_logo.png>
+Package pdftex.def Info: git_logo.png  used on input line 188.
+(pdftex.def)             Requested size: 70.67535pt x 29.55522pt.
+
 Overfull \hbox (1.18056pt too wide) has occurred while \output is active
 []|  [][][] 
  []
 
 [5
 
-]
+ <./git_logo.png>]
+<git_branching.png, id=63, 451.6875pt x 202.7575pt>
+File: git_branching.png Graphic file (type png)
+<use git_branching.png>
+Package pdftex.def Info: git_branching.png  used on input line 200.
+(pdftex.def)             Requested size: 245.83282pt x 110.35368pt.
+
 Overfull \hbox (1.18056pt too wide) has occurred while \output is active
 []|  [][][] 
  []
 
 [6
 
-]
+ <./git_branching.png>]
+<git_commiting.png, id=73, 367.3725pt x 245.91875pt>
+File: git_commiting.png Graphic file (type png)
+<use git_commiting.png>
+Package pdftex.def Info: git_commiting.png  used on input line 220.
+(pdftex.def)             Requested size: 153.64493pt x 102.84988pt.
+
 Overfull \hbox (1.18056pt too wide) has occurred while \output is active
 []|  [][][] 
  []
 
 [7
 
-]
+ <./git_commiting.png (PNG copy)>]
 Overfull \hbox (1.18056pt too wide) has occurred while \output is active
 []|  [][][] 
  []
@@ -1454,16 +1472,37 @@ Overfull \hbox (1.18056pt too wide) has occurred while \output is active
 [8
 
 ]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 208.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 208.
-
 Overfull \hbox (1.18056pt too wide) has occurred while \output is active
 []|  [][][] 
  []
 
 [9
+
+]
+Overfull \hbox (1.18056pt too wide) has occurred while \output is active
+[]|  [][][] 
+ []
+
+[10
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 262.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 262.
+
+Overfull \hbox (1.18056pt too wide) has occurred while \output is active
+[]|  [][][] 
+ []
+
+[11
+
+]
+Overfull \hbox (1.18056pt too wide) has occurred while \output is active
+[]|  [][][] 
+ []
+
+[12
 
 ]
 \tf@nav=\write5
@@ -1477,27 +1516,27 @@ Overfull \hbox (1.18056pt too wide) has occurred while \output is active
 
 (./r_and_git.aux) ) 
 Here is how much of TeX's memory you used:
- 29840 strings out of 476093
- 640221 string characters out of 5766133
+ 29950 strings out of 476093
+ 642564 string characters out of 5766133
  1866793 words of memory out of 5000000
- 49508 multiletter control sequences out of 15000+600000
- 568824 words of font info for 106 fonts, out of 8000000 for 9000
+ 49598 multiletter control sequences out of 15000+600000
+ 572323 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,122p,1928b,736s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/nix/store/bn8yjg2ny20fsr7nz0jlisrrwr4r0miz-texlive-combine
-d-full-2022.20221227-texmf/fonts/enc/dvips/lm/lm-ec.enc}{/nix/store/bn8yjg2ny20
-fsr7nz0jlisrrwr4r0miz-texlive-combined-full-2022.20221227-texmf/fonts/enc/dvips
-/lm/lm-ts1.enc}</nix/store/bn8yjg2ny20fsr7nz0jlisrrwr4r0miz-texlive-combined-fu
+d-full-2022.20221227-texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/nix/store/bn8yjg2ny2
+0fsr7nz0jlisrrwr4r0miz-texlive-combined-full-2022.20221227-texmf/fonts/enc/dvip
+s/lm/lm-ec.enc}</nix/store/bn8yjg2ny20fsr7nz0jlisrrwr4r0miz-texlive-combined-fu
 ll-2022.20221227-texmf/fonts/type1/public/lm/lmss10.pfb></nix/store/bn8yjg2ny20
 fsr7nz0jlisrrwr4r0miz-texlive-combined-full-2022.20221227-texmf/fonts/type1/pub
 lic/lm/lmss8.pfb></nix/store/bn8yjg2ny20fsr7nz0jlisrrwr4r0miz-texlive-combined-
 full-2022.20221227-texmf/fonts/type1/public/lm/lmss9.pfb></nix/store/bn8yjg2ny2
 0fsr7nz0jlisrrwr4r0miz-texlive-combined-full-2022.20221227-texmf/fonts/type1/pu
 blic/lm/lmssbx10.pfb>
-Output written on r_and_git.pdf (9 pages, 128423 bytes).
+Output written on r_and_git.pdf (12 pages, 190627 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
- 27 named destinations out of 1000 (max. 500000)
- 36912 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 164 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 41023 words of extra memory for PDF output out of 42996 (max. 10000000)
 
