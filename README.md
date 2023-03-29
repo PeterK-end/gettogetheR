@@ -1,2 +1,2 @@
 # gettogetheR
-Unterlagen zum GetTogtheR am Institut für Soziologie im SoSe 2023
+Unterlagen zum GetTogetheR am Institut für Soziologie im SoSe 2023
