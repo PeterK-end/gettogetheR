@@ -14,15 +14,15 @@ date: |
   | peter.kannewitz@uni-leipzig.de
   |
   |              
-  |
-  12. April 2023 
+  |              
+  |                                                                                    12. April 2023
 fontsize: 9 pt
 output: 
   beamer_presentation:
     includes:
       in_header: preambel.tex
 header-includes: 
-  - \AtBeginDocument{\title[R Kurs]{\vspace{1cm} GetTogetheR!}}
+  - \AtBeginDocument{\title[GetTogetheR 1]{\vspace{1cm} GetTogetheR!}}
   - \AtBeginDocument{\author[Peter Kannewitz \& Jonas Frost]{ }}
 ---
 
@@ -33,7 +33,11 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 
 ## Ablauf
 
-\tableofcontents
+\begin{minipage}{\textwidth}
+   \linespread{2}
+   \tableofcontents
+\end{minipage}
+\vspace*{3cm}
 
 ## GetTogetheR
 
@@ -44,7 +48,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
   - Netzwerkanalyse in R [Till Hovestadt] (11.05.2023)
   - ChatGPT in RStudio (08.06.2023)
   - Hausarbeiten mit RMarkdown (13.07.2023)
-- aktueller Syllabus im [Moodlekurs](https://moodle2.uni-leipzig.de/course/view.php?id=41052)
+- aktueller Syllabus im [\textcolor{blue}{Moodlekurs}](https://moodle2.uni-leipzig.de/course/view.php?id=41052)
 
 ## Motivation
 
@@ -53,6 +57,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
   - Backup
   - Dokumentation
 - RStudio bietet gute und einfache Möglichkeit zur Versionskontrolle via Git
+- Funktion ist oft nicht Teil von Einführungskursen und wird daher wenig genutzt
 
 # Kurzeinstieg: Git
 
@@ -88,11 +93,48 @@ knitr::include_graphics("git_commiting.png")
 
 ## Git und RStudio
 
-- Was brauch man alles? (Account bei einem Git-Hoster, SSH/GPG-Keys, Git auf dem Rechner, aktuelle RStudio Version, ...)
+- Was brauch man alles?
+  - [Git](https://git-scm.com/downloads) auf dem Rechner installiert
+  - Account bei einem Git-Hoster (bspw. GitHub)
+  - bestehendes Git-Repository
+  
+\vspace*{0.6cm}
+
+- Schritte:
+  - neues R-Projekt erstellen 
+  - Version Control
+  - URL des Repositorys angeben
+  
+## Wir zeigen's Euch
+
+```{r, echo=FALSE, out.width='50%', fig.align='center'}
+knitr::include_graphics("present.png")
+```
+
+## Limitationen
+
+- GitHub ist nicht für große Daten gedacht (Filelimit 100MB)
+- man muss Änderungen regelmäßig pushen, sonst hat man nichts gewonnen
+- bei Problemen (gerade beim Kollaborieren) muss man sich näher mit Git auseinandersetzen (merge conflicts)
 
 ## Warum sich die Mühe machen? 
 
-- ...
+\begin{columns}
+\begin{column}{0.5\textwidth}
+   \begin{itemize}
+      \item Änderungen tracken, dokumentieren und rückgängig machen 
+      \item gleichzeitig im Team zusammenarbeiten und Änderungen zusammenführen
+      \item Projekte sicher abspeichern 
+      \item GitHub bietet unglaublich viel Potential für weitere Anwendungsfälle (Aufgabenplanung, Release, Continious Integration)
+   \end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+    \begin{center}
+     \includegraphics[width=1\textwidth]{final_doc.png}      
+     \end{center}
+\end{column}
+\end{columns}
+
 
 # Ressourcen und Hilfe
 
@@ -102,13 +144,22 @@ knitr::include_graphics("git_commiting.png")
 - https://posit.co/resources/videos/managing-part-2-github-and-rstudio/ (Video zum Einstieg)
 - https://happygitwithr.com/ (Umfassende Referenz)
 
+## Austausch
+
+- Welche Erfahrung habt Ihr mit Git und RStudio? Tipps? Tricks?
+- Habt Ihr Ideen für eigene Anwendungsfälle? Wofür wollt Ihr die RStudio-Integration von Git benutzen?
+
+## Austausch
+
+- Ausprobieren?
+
 ## Bildquellen
 
 - https://geniusee.com/storage/app/media/blog/blog223_git_branching_model/GitHub_Flow.png
 - https://git-scm.com/images/logo@2x.png
 - https://www.inflectra.com/Images/Product-Imagery/Git.png
+- https://www.freepik.com/free-icon/business-presentation_772083.htm
+- https://phdcomics.com/comics/archive_print.php?comicid=1531
 
 
-## Diskussion
 
-- Frage: welche Erfahrung habt Ihr zum Thema R und Git gemacht?
