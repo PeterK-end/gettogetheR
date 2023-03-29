@@ -37,13 +37,24 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 
 ## GetTogetheR
 
-- Veranstaltung vorstellen
+- monatliche Veranstaltung (jeden 2. Donnerstag im Monat)
+- kurze Inputvorträge von uns oder unseren Gästen
+- aktuelle Themen rund um R und RStudio:
+  - R und Git (13.04.2023)
+  - Netzwerkanalyse in R [Till Hovestadt] (11.05.2023)
+  - ChatGPT in RStudio (08.06.2023)
+  - Hausarbeiten mit RMarkdown (13.07.2023)
+- aktueller Syllabus im [Moodlekurs](https://moodle2.uni-leipzig.de/course/view.php?id=41052)
 
-## R und Git
+## Motivation
 
-- Wie kommen wir auf das Thema
-- Was wir machen (Kurzeinstieg zum Thema, Sammeln und Bereitstellen von Ressourcen zum Einstieg)
-- Was wir nicht machen (Tutorial zum mitmachen)
+- Git entwickelt sich zum Standard für viele Anwendungsfelder
+  - Kollaboration
+  - Backup
+  - Dokumentation
+- RStudio bietet gute und einfache Möglichkeit zur Versionskontrolle via Git
+
+# Kurzeinstieg: Git
 
 ## Was ist Git?
 
@@ -73,6 +84,8 @@ knitr::include_graphics("git_commiting.png")
 
 - Git-Hoster: [\textcolor{blue}{GitHub}](https://github.com/), [\textcolor{blue}{GitLab}](https://about.gitlab.com/), [\textcolor{blue}{Gitea}](https://gitea.io/en-us/), ...
 
+# Setup mit RStudio
+
 ## Git und RStudio
 
 - Was brauch man alles? (Account bei einem Git-Hoster, SSH/GPG-Keys, Git auf dem Rechner, aktuelle RStudio Version, ...)
@@ -81,9 +94,7 @@ knitr::include_graphics("git_commiting.png")
 
 - ...
 
-## Diskussion
-
-- Frage: welche Erfahrung habt Ihr zum Thema R und Git gemacht?
+# Ressourcen und Hilfe
 
 ## Nützliche Ressourcen zum Thema
 
@@ -98,4 +109,6 @@ knitr::include_graphics("git_commiting.png")
 - https://www.inflectra.com/Images/Product-Imagery/Git.png
 
 
+## Diskussion
 
+- Frage: welche Erfahrung habt Ihr zum Thema R und Git gemacht?
