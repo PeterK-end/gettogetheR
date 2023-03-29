@@ -10,11 +10,12 @@ date: |
   | Jonas Frost
   | jonas.frost@studserv.uni-leipzig.de
   |
-  |
   | Peter Kannewitz                       
   | peter.kannewitz@uni-leipzig.de
   |
-  |                                                                                     12. April 2023 
+  |              
+  |
+  12. April 2023 
 fontsize: 9 pt
 output: 
   beamer_presentation:
