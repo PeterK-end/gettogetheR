@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.29)  29 MAR 2023 15:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.6)  12 APR 2023 09:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **r_and_git.tex
 (./r_and_git.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-22> (c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamer.cls
+L3 programming layer <2023-03-30> (c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2023/02/20 v3.69 A class for typesetting presentations
 (c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
@@ -710,7 +710,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hfill' on input line 134.
 
 (c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count355
 \l__pdf_internal_box=\box90
 ) (./r_and_git.aux)
@@ -903,20 +903,8 @@ Overfull \hbox (1.18056pt too wide) has occurred while \output is active
 
 [1
 
-{c:/Users/frost/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./Logo.png>] (./r_and_git.toc)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 144.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 144.
-
-Overfull \hbox (1.18056pt too wide) has occurred while \output is active
-[]|  [][][] 
- []
-
-[2
-
-]
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 172.
+{c:/Users/frost/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./Logo.png>]
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 163.
 (c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -924,9 +912,21 @@ Overfull \hbox (1.18056pt too wide) has occurred while \output is active
 []|  [][][] 
  []
 
+[2
+
+{c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] (./r_and_git.toc)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 172.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 172.
+
+Overfull \hbox (1.18056pt too wide) has occurred while \output is active
+[]|  [][][] 
+ []
+
 [3
 
-{c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+]
 Overfull \hbox (1.18056pt too wide) has occurred while \output is active
 []|  [][][] 
  []
@@ -1061,15 +1061,15 @@ Package rerunfilecheck Info: File `r_and_git.out' has not changed.
 (rerunfilecheck)             Checksum: 712CF088FC0C9CF0EB40A90CB944136C;414.
  ) 
 Here is how much of TeX's memory you used:
- 27596 strings out of 477955
- 582627 string characters out of 5835940
- 1865382 words of memory out of 5000000
- 47179 multiletter control sequences out of 15000+600000
+ 27594 strings out of 477947
+ 582579 string characters out of 5835692
+ 1865660 words of memory out of 5000000
+ 47185 multiletter control sequences out of 15000+600000
  567966 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  101i,14n,111p,1928b,755s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss8.pfb><c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss9.pfb><c:/Users/frost/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on r_and_git.pdf (18 pages, 338807 bytes).
+Output written on r_and_git.pdf (18 pages, 338816 bytes).
 PDF statistics:
  231 PDF objects out of 1000 (max. 8388607)
  181 compressed objects within 2 object streams

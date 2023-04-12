@@ -31,14 +31,6 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 ```
 
 
-## Ablauf
-
-\begin{minipage}{\textwidth}
-   \linespread{2}
-   \tableofcontents
-\end{minipage}
-\vspace*{3cm}
-
 ## GetTogetheR
 
 - monatliche Veranstaltung (jeden 2. Donnerstag im Monat)
@@ -49,6 +41,14 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
   - ChatGPT in RStudio (08.06.2023)
   - Hausarbeiten mit RMarkdown (13.07.2023)
 - aktueller Syllabus im [\textcolor{blue}{Moodlekurs}](https://moodle2.uni-leipzig.de/course/view.php?id=41052)
+
+## Ablauf
+
+\begin{minipage}{\textwidth}
+   \linespread{2}
+   \tableofcontents
+\end{minipage}
+\vspace*{3cm}
 
 ## Motivation
 
