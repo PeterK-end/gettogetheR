@@ -15,12 +15,13 @@ date: |
   |
   |              
   |              
-  |                                                                                    13. April 2023
+  |                                                                                                      13. April 2023
 fontsize: 9 pt
 output: 
   beamer_presentation:
     includes:
       in_header: preambel.tex
+    latex_engine: lualatex  
 header-includes: 
   - \AtBeginDocument{\title[GetTogetheR 1]{\vspace{1cm} GetTogetheR!}}
   - \AtBeginDocument{\author[Peter Kannewitz \& Jonas Frost]{ }}
@@ -54,7 +55,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 
 - Git entwickelt sich zum Standard für viele Anwendungsfelder
   - Kollaboration
-  - Backup
+  - Sicherung von Projekten (Backup)
   - Dokumentation
 - RStudio bietet gute und einfache Möglichkeit zur Versionskontrolle via Git
 - Funktion ist oft nicht Teil von Einführungskursen und wird daher wenig genutzt
@@ -68,13 +69,16 @@ knitr::include_graphics("git_logo.png")
 ```
 
 
-- Programm zur Versionskontrolle
-  - kann komplett lokal genutzt werden
-  - Änderungen werden Schrittweise durchgeführt (Commit)
-  - Änderungen können Rückgängig gemacht werden (Revert)
-  - Ältere Versionen des Projekts können wieder hergestellt werden (Reset)
-  - Verschiedene Versionen des Projekts können gleichzeitig bearbeitet werden und später zusammengeführt (Branching/Merging)
-  
+>- Programm zur Versionskontrolle 
+>  + kann komplett lokal genutzt werden 
+>  + kommt ohne grafische Oberfläche 
+>    + mögliche GUIs: [\textcolor{blue}{GitHub Desktop}](https://desktop.github.com), [\textcolor{blue}{Source Tree}](https://www.sourcetreeapp.com), [\textcolor{blue}{GitKraken}](https://www.gitkraken.com/), bzw. RStudio 
+>  + Änderungen werden Schrittweise durchgeführt (`git commit`)
+>  + Änderungen können Rückgängig gemacht werden (`git restore`)
+>  + Ältere Versionen des Projekts können wieder hergestellt werden (`git reset`)
+>  + Verschiedene Versionen des Projekts können parallel bearbeitet werden und später zusammengeführt (Branching -> `git checkout`, Merging -> `git merge`)
+
+
 ## Git Branching  
 
 ```{r, echo=FALSE, out.width='80%', fig.align='center', fig.cap="Inkrementale Arbeit an einem Projekt"}
@@ -149,7 +153,7 @@ knitr::include_graphics("present.png")
       \item Änderungen tracken, dokumentieren und rückgängig machen 
       \item gleichzeitig im Team zusammenarbeiten und Änderungen zusammenführen
       \item Projekte sicher abspeichern 
-      \item GitHub bietet unglaublich viel Potential für weitere Anwendungsfälle (Aufgabenplanung, Release, Continious Integration)
+      \item GitHub bietet unglaublich viel Potential für weitere Anwendungsfälle (Aufgabenplanung in Projekten, Releases, Continuous deployment von \href{https://bookdown.org/yihui/bookdown/github.html)}{\textcolor{blue}{Bookdown}} Dokumenten, ...)
    \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
@@ -158,6 +162,7 @@ knitr::include_graphics("present.png")
      \end{center}
 \end{column}
 \end{columns}
+
 
 
 # Ressourcen und Hilfe
@@ -179,6 +184,12 @@ knitr::include_graphics("present.png")
 ## Austausch
 
 - Ausprobieren?
+
+## 
+
+\center\huge
+
+Danke fürs Teilnehmen!
 
 ## Bildquellen
 
