@@ -153,7 +153,7 @@ knitr::include_graphics("present.png")
       \item Änderungen tracken, dokumentieren und rückgängig machen 
       \item gleichzeitig im Team zusammenarbeiten und Änderungen zusammenführen
       \item Projekte sicher abspeichern 
-      \item GitHub bietet unglaublich viel Potential für weitere Anwendungsfälle (Aufgabenplanung in Projekten, Releases, Continuous deployment von \href{https://bookdown.org/yihui/bookdown/github.html)}{\textcolor{blue}{Bookdown}} Dokumenten, ...)
+      \item GitHub bietet unglaublich viel Potential für weitere Anwendungsfälle (Aufgabenplanung in Projekten, Releases, Continuous deployment von \href{https://bookdown.org/yihui/bookdown/github.html}{\textcolor{blue}{Bookdown}} Dokumenten, ...)
    \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
