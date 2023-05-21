@@ -1,0 +1,76 @@
+---
+title: |
+  | GetTogetheR 
+  |
+subtitle: |
+  |
+  | ChatGPT und R
+date: | 
+  |
+  | Jonas Frost
+  | jonas.frost@studserv.uni-leipzig.de
+  |
+  | Peter Kannewitz                       
+  | peter.kannewitz@uni-leipzig.de
+  |
+  |              
+  |              
+  |                                                                                                      08. Juni 2023
+fontsize: 9 pt
+output: 
+  beamer_presentation:
+    includes:
+      in_header: preambel.tex
+    latex_engine: lualatex  
+header-includes: 
+  - \AtBeginDocument{\title[GetTogetheR 1]{\vspace{1cm} GetTogetheR!}}
+  - \AtBeginDocument{\author[Peter Kannewitz \& Jonas Frost]{ }}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
+```
+
+
+## Ablauf
+
+\begin{minipage}{\textwidth}
+   \linespread{2}
+   \tableofcontents
+\end{minipage}
+\vspace*{3cm}
+
+## Motivation
+
+- ...
+
+# Kurzeinstieg: ChatGPT 
+
+## Was ist ChatGPT?
+
+# ChatGPT nutzen
+
+## Möglichkeiten ChatGPT in einen R-Worflow zu integrieren
+
+- https://cran.r-project.org/web/packages/chatgpt/index.html
+  - https://github.com/jcrodriguez1989/chatgpt
+- https://www.r-bloggers.com/2023/03/call-chatgpt-or-really-any-other-api-from-r/
+
+# Ressourcen und Hilfe
+
+## Nützliche Ressourcen zum Thema
+
+# Austausch
+
+## Austausch
+
+- Welche Erfahrung habt Ihr mit ChatGPT in Bezug auf R gemacht?
+
+## 
+
+\center\huge
+
+Danke fürs Teilnehmen!
+
+
+
