@@ -47,7 +47,29 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 
 # Kurzeinstieg: ChatGPT 
 
-- (P)
+## Was ist GPT?
+
+- **G**enerative **P**re-trained **T**ransformer
+  - generatives Sprachmodell mit Transformer Architektur
+  - Zusammensetzung von künstlichen neuronalen Netzen
+- Bezeichnet eine Familie von Large Language Models (LLM)
+  - Ziel: möglichst viel Trainingsdaten, um Sprache "generieren" zu können 
+- Erste Version GPT-1 2018 veröffentlicht (117 Millionen Parameter) ^[ https://en.wikipedia.org/wiki/Generative_pre-trained_transformer]
+  - aktuell: GPT-4, 2023 veröffentlicht
+  - Vorgänger: GPT-3 mit 175 Billionen Parametern
+  
+
+## Intuition: Wie funktioniert ein LLM?
+
+- Unupervised machine learning
+  - keine explizite "Ground Truth"
+  - Muster in den Trainingsdaten werden im Netz abgebildet
+- Ziel: Gegeben eine Vorgeschichte $\rightarrow$ Was ist das nächst Wort?
+
+```{r, echo=FALSE, out.width='80%', fig.align='center', fig.cap="Quelle: https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"}
+knitr::include_graphics("images/next_word.png")
+```
+
 
 ## Was ist ChatGPT?
 
