@@ -22,6 +22,7 @@ output:
     includes:
       in_header: preambel.tex
     latex_engine: lualatex  
+    slide_level: 2
 header-includes: 
   - \AtBeginDocument{\title[GetTogetheR 1]{\vspace{1cm} GetTogetheR!}}
   - \AtBeginDocument{\author[Peter Kannewitz \& Jonas Frost]{ }}
@@ -42,9 +43,11 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 
 ## Motivation
 
-- ...
+- (J)
 
 # Kurzeinstieg: ChatGPT 
+
+- (P)
 
 ## Was ist ChatGPT?
 
@@ -52,19 +55,39 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 
 ## Möglichkeiten ChatGPT in einen R-Worflow zu integrieren
 
-- https://cran.r-project.org/web/packages/chatgpt/index.html
+
+- WebApp 
+  - chat.openai.com
+  - Voraussetzungen: OpenAI Konto 
+- R-Plugins (/Packages)
+  - Voraussetzungen: Konto, gültigen API-Key
+  - Einschränkung: Rate-Limit
+  - https://cran.r-project.org/web/packages/chatgpt/index.html
   - https://github.com/jcrodriguez1989/chatgpt
-- https://www.r-bloggers.com/2023/03/call-chatgpt-or-really-any-other-api-from-r/
+  
+## OpenAI API Zugriff  
+
+- (P)
+- Wie, Probleme, Pricing, Zeigen
+  
+## Wir zeigens Euch
+
+- Prompts überlegen, die wir demonstrieren wollen
+- Einfaches Beispielscript mit Plugin bearbeiten
 
 # Ressourcen und Hilfe
 
 ## Nützliche Ressourcen zum Thema
+
+- (P & J)
 
 # Austausch
 
 ## Austausch
 
 - Welche Erfahrung habt Ihr mit ChatGPT in Bezug auf R gemacht?
+- Welche Nachteile könnte ein aktiver Gebrauch von Chat-GPT haben?
+- ...
 
 ## 
 
