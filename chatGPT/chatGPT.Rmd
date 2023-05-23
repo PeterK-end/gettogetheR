@@ -32,6 +32,22 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 ```
 
+## Motivation
+
+- ChatGPT und andere KI-Tools haben in letzter Zeit stark an Bedeutung gewonnen
+  - mehr Anwendungsmöglichkeiten
+  - schnellere Benutzung
+  - einfacher Zugang
+  - große Trainingsdatensätze
+
+- Wir können diese Tools für unsere Arbeit mit R nutzen!
+- ChatGPT kann R-Code ...
+  - generieren
+  - korrigieren
+  - erklären
+  - kommentieren
+  - optimieren
+- **Wir müssen wissen, wie wir am besten mit ChatGPT kommunizieren, um die gewünschten Ergebnisse zu bekommen (Promting)**
 
 ## Ablauf
 
@@ -40,10 +56,6 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
    \tableofcontents
 \end{minipage}
 \vspace*{3cm}
-
-## Motivation
-
-- (J)
 
 # Kurzeinstieg: ChatGPT 
 
@@ -79,22 +91,46 @@ knitr::include_graphics("images/next_word.png")
 
 
 - WebApp 
-  - chat.openai.com
-  - Voraussetzungen: OpenAI Konto 
-- R-Plugins (/Packages)
+  - [chat.openai.com](https://chat.openai.com/)
+  - Voraussetzungen: [OpenAI Konto](https://openai.com/product/chatgpt) 
+- R-Packages
   - Voraussetzungen: Konto, gültigen API-Key
   - Einschränkung: Rate-Limit
-  - https://cran.r-project.org/web/packages/chatgpt/index.html
-  - https://github.com/jcrodriguez1989/chatgpt
+  - R-Package und und RStudio-Plugin: [`chatgpt::`](https://cran.r-project.org/web/packages/chatgpt/index.html)
   
+## Wir zeigens Euch: WebApp
+
+
+\begin{block}{Beispiel 1}
+"Given a dataset with 3 variables "name", "group" and "status", where name is a character, and group and status are dummy variables.  Generate an R code that generates a cross table of the two variables group and status. Also, the code should filter cases with status 1 and print the names of persons with status 1. Use the tidyverse package and comment the code."
+\end{block}
+
+\begin{block}{Beispiel 2}
+"Now, using the same dataset write an R code using the ggplot2 package that generates a barchart showing the relative frequencies of the status variable. Color the bars using the group variable."
+\end{block}
+
+## Tipps für's Promting
+
+- gebt ChatGPT so spezifische Anweisungen wie möglich:
+  - Welche Packages?
+  - Welche Datentypen?
+  - Wie soll das Ergebnis aussehen?
+  - Wie lautet die Fehlermitteilung?
+
+- Oft ist Codegeneration mit ChatGPT iterativ:
+  1) Initialer Prompt
+  2) erster generierter Code
+  3) Code testen
+  4) ChatGPT auf Fehler hinweisen oder Prompt entsprechend anpassen
+  5) Schritt 3) und 4) wiederholen, bis Code wie erwartet läuft
+
 ## OpenAI API Zugriff  
 
 - (P)
 - Wie, Probleme, Pricing, Zeigen
   
-## Wir zeigens Euch
+## Wir zeigens Euch: Plugin `chatgpt::`
 
-- Prompts überlegen, die wir demonstrieren wollen
 - Einfaches Beispielscript mit Plugin bearbeiten
 
 # Ressourcen und Hilfe
