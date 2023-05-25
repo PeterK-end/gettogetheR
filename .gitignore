@@ -2,4 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
-.json
+# Exclude all json files
+*.json
