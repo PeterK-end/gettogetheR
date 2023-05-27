@@ -69,6 +69,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 - Erste Version GPT-1 2018 veröffentlicht (117 Millionen Parameter) ^[ https://en.wikipedia.org/wiki/Generative_pre-trained_transformer]
   - aktuell: GPT-4, 2023 veröffentlicht
   - Vorgänger: GPT-3 mit 175 Billionen Parametern
+- ChatGPT ist eine für Dialog optimierte Variante von GPT
   
 
 ## Intuition: Wie funktioniert ein LLM?
@@ -83,7 +84,35 @@ knitr::include_graphics("images/next_word.png")
 ```
 
 
-## Was ist ChatGPT?
+## Intuition: künstliche Neuronale Netze
+
+- Inspiriert vom menschlichen Gehirn
+
+```{r, echo=FALSE, out.width='70%', fig.align='center', fig.cap="Quelle: https://upload.wikimedia.org/wikipedia/commons/4/44/Neuron3.png"}
+knitr::include_graphics("images/neuron.png")
+```
+
+## Intuition: künstliche Neuronale Netze
+
+- Architektur eines künstlichen neuronalen Netzwerks
+
+```{r, echo=FALSE, out.width='70%', fig.align='center', fig.cap="Quelle: https://medium.com/data-science-365/one-hidden-layer-shallow-neural-network-architecture-d45097f649e6"}
+knitr::include_graphics("images/neural_network.svg")
+```
+
+
+## Unterschied zur klassischen Regression
+
+- Berechnung des Fehlers Iterativ (Punkt- oder Batchweise), statt global für alle Beispiele
+- Mehrere "Layer", die nicht linear miteinander Interagieren (96 bei GPT-3)
+- Outputs von mehrschichtigen neuronalen Netzen sind kaum bis gar nicht Rückführbar auf einzelne Teile des Netzwerkes
+
+```{r, echo=FALSE, out.width='50%', fig.align='center'}
+knitr::include_graphics("images/linear_regression.png")
+```
+\footnotesize
+Quelle: https://upload.wikimedia.org/wikipedia/commons/e/ed/Residuals_for_Linear_Regression_Fit.png
+
 
 # ChatGPT nutzen
 
@@ -126,8 +155,13 @@ knitr::include_graphics("images/next_word.png")
 
 ## OpenAI API Zugriff  
 
-- (P)
-- Wie, Probleme, Pricing, Zeigen
+- Anmeldung bei [\textcolor{blue}{OpenAI}](https://platform.openai.com/signup) erforderlich
+- $5 Startguthaben, aber nur für die ersten 3 Monate
+- Rate Limits für Startguthaben: 3 requests per minute
+- Danach muss Zahlungsmittel hinterlegt werden, für weiter Nutzung. Kosten^[https://openai.com/pricing]:
+  - GPT-4, 8K context, Prompt: $0.03/1K tokens
+  - GPT-3.5-turbo: $0.002/1K tokens 
+  
   
 ## Wir zeigens Euch: Plugin `chatgpt::`
 
@@ -137,6 +171,7 @@ knitr::include_graphics("images/next_word.png")
 
 ## Nützliche Ressourcen zum Thema
 
+- Anspruchsvolle, umfassende Einführung: https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/
 - (P & J)
 
 # Austausch
