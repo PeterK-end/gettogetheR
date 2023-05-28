@@ -47,7 +47,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
   - erklären
   - kommentieren
   - optimieren
-- **Wir müssen wissen, wie wir am besten mit ChatGPT kommunizieren, um die gewünschten Ergebnisse zu bekommen (Promting)**
+- **Wir müssen wissen, wie wir am besten mit ChatGPT kommunizieren, um die gewünschten Ergebnisse zu bekommen (Prompting)**
 
 ## Ablauf
 
@@ -138,7 +138,7 @@ Quelle: https://upload.wikimedia.org/wikipedia/commons/e/ed/Residuals_for_Linear
 "Now, using the same dataset write an R code using the ggplot2 package that generates a barchart showing the relative frequencies of the status variable. Color the bars using the group variable."
 \end{block}
 
-## Tipps für's Promting
+## Tipps für's Prompting
 
 - gebt ChatGPT so spezifische Anweisungen wie möglich:
   - Welche Packages?
@@ -161,10 +161,14 @@ Quelle: https://upload.wikimedia.org/wikipedia/commons/e/ed/Residuals_for_Linear
 - Danach muss Zahlungsmittel hinterlegt werden, für weiter Nutzung. Kosten^[https://openai.com/pricing]:
   - GPT-4, 8K context, Prompt: $0.03/1K tokens
   - GPT-3.5-turbo: $0.002/1K tokens 
+- Für R-Package `chatgpt` ist API-Key erforderlich
   
   
-## Wir zeigens Euch: Plugin `chatgpt::`
+## Wir zeigens Euch: Plugin `chatgpt`
 
+- API-Key als globale Systemvariable **OPENAI_API_KEY** abspeichern
+- Plugin und `chatgpt`-Funktionen nun nutzbar
+- Funktionsweise: Package sendet markierten Code und vorgefertigten Promt über die API an ChatGPT
 - Einfaches Beispielscript mit Plugin bearbeiten
 
 # Ressourcen und Hilfe

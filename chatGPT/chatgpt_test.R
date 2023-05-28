@@ -4,7 +4,7 @@
 ## API-Key einlesen
 library(jsonlite)
 
-api <- read_json("chatgpt/jonas_openai_api.json")
+api <- read_json("jonas_openai_api.json")
 Sys.setenv(OPENAI_API_KEY = api$key)
 
 ## chatgpt-Paket laden
@@ -79,7 +79,6 @@ summary(fit_log)
 fit_lm <-
   lm(
     formula = sicherer_job ~ . + akademiker_vater*akademiker_mutter,
-    # family = binomial(link = "logit"), @ Das muss hier raus!
     data = data
   )
 
