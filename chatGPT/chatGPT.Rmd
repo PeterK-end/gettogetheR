@@ -24,7 +24,7 @@ output:
     latex_engine: lualatex  
     slide_level: 2
 header-includes: 
-  - \AtBeginDocument{\title[GetTogetheR 1]{\vspace{1cm} GetTogetheR!}}
+  - \AtBeginDocument{\title[GetTogetheR]{\vspace{1cm} GetTogetheR!}}
   - \AtBeginDocument{\author[Peter Kannewitz \& Jonas Frost]{ }}
 ---
 
@@ -59,6 +59,11 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 
 # Kurzeinstieg: ChatGPT 
 
+## Kleine Demonstration
+
+- <https://platform.openai.com/tokenizer>
+- <https://platform.openai.com/playground>
+
 ## Was ist GPT?
 
 - **G**enerative **P**re-trained **T**ransformer
@@ -71,6 +76,14 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
   - Vorgänger: GPT-3 mit 175 Billionen Parametern
 - ChatGPT ist eine für Dialog optimierte Variante von GPT
   
+## Trainingsdaten  
+
+- Riesiger Textkorpus -> 410 Billionen Tokens
+
+```{r, out.width='80%', fig.align='center', echo=FALSE, fig.cap="Quelle: https://katzlberger.ai/2021/04/12/mit-diesen-daten-wurde-gpt-3-trainiert/"}
+knitr::include_graphics("images/GPT-3-Datenquellen.jpg")
+```
+
 
 ## Intuition: Wie funktioniert ein LLM?
 
@@ -101,18 +114,13 @@ knitr::include_graphics("images/neural_network.svg")
 ```
 
 
-## Unterschied zur klassischen Regression
+## Probleme von LLMs 
 
-- Berechnung des Fehlers Iterativ (Punkt- oder Batchweise), statt global für alle Beispiele
 - Mehrere "Layer", die nicht linear miteinander Interagieren (96 bei GPT-3)
 - Outputs von mehrschichtigen neuronalen Netzen sind kaum bis gar nicht Rückführbar auf einzelne Teile des Netzwerkes
-
-```{r, echo=FALSE, out.width='50%', fig.align='center'}
-knitr::include_graphics("images/linear_regression.png")
-```
-\footnotesize
-Quelle: https://upload.wikimedia.org/wikipedia/commons/e/ed/Residuals_for_Linear_Regression_Fit.png
-
+  - $\rightarrow$ Blackbox
+- Sprachmodelle sind sehr rechenintensiv (sowohl Training als auch Nutzung)
+  - ChatGPT kann nur serverseitig genutzt werden (Datenschutz?)
 
 # ChatGPT nutzen
 
@@ -153,6 +161,14 @@ Quelle: https://upload.wikimedia.org/wikipedia/commons/e/ed/Residuals_for_Linear
   4) ChatGPT auf Fehler hinweisen oder Prompt entsprechend anpassen
   5) Schritt 3) und 4) wiederholen, bis Code wie erwartet läuft
 
+## Was ist eine API?
+
+  - API -> Application Programming Interface
+    - ist eine vom Betreiber der Anwendung bereitgestellte Schnittstelle
+  - Oft an einen sogenannten API-Key gebunden, über welchen man sich authentifiziert  
+
+  
+    
 ## OpenAI API Zugriff  
 
 - Anmeldung bei [\textcolor{blue}{OpenAI}](https://platform.openai.com/signup) erforderlich
@@ -171,20 +187,13 @@ Quelle: https://upload.wikimedia.org/wikipedia/commons/e/ed/Residuals_for_Linear
 - Funktionsweise: Package sendet markierten Code und vorgefertigten Promt über die API an ChatGPT
 - Einfaches Beispielscript mit Plugin bearbeiten
 
-# Ressourcen und Hilfe
-
-## Nützliche Ressourcen zum Thema
-
-- Anspruchsvolle, umfassende Einführung: https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/
-- (P & J)
-
 # Austausch
 
 ## Austausch
 
 - Welche Erfahrung habt Ihr mit ChatGPT in Bezug auf R gemacht?
 - Welche Nachteile könnte ein aktiver Gebrauch von Chat-GPT haben?
-- ...
+- Wie Reproduzierbar sind Antworten von ChatGPT, was bedeutet das für die Forschung?
 
 ## 
 
