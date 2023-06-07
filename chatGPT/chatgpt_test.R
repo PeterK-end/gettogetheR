@@ -92,4 +92,3 @@ fit_log2 <-
     family = binomial(link = "logit"),
     data = .
   )
-

@@ -137,13 +137,12 @@ knitr::include_graphics("images/neural_network.svg")
   
 ## Wir zeigens Euch: WebApp
 
-
 \begin{block}{Beispiel 1}
-"Given a dataset with 3 variables "name", "group" and "status", where name is a character, and group and status are dummy variables.  Generate an R code that generates a cross table of the two variables group and status. Also, the code should filter cases with status 1 and print the names of persons with status 1. Use the tidyverse package and comment the code."
+"Wie kann ich in R einen Boxplot erstellen?"
 \end{block}
 
 \begin{block}{Beispiel 2}
-"Now, using the same dataset write an R code using the ggplot2 package that generates a barchart showing the relative frequencies of the status variable. Color the bars using the group variable."
+"Ich habe einen Datensatz mit den Variablen einkommen, geschlecht und ost\_west. einkommen ist nummerisch, geschlecht ein Faktor mit den Ausprägungen "männlich" und "weiblich" und ost\_west ein Faktor mit den Ausprägungen "ost" und "west". Wie kann ich aus diesen Variablen einen Boxplot in R erstellen? Ich möchte das Paket ggplot2 verwenden. Auf der y-Achse soll das Einkommen abgebildet werden, auf der x-Achse das Geschlecht. Die Farbe der Boxplots soll nach der Variable ost\_west variieren. Erstelle einen Beispieldatensatz. Kommentiere den ausgegebenen Code."
 \end{block}
 
 ## Tipps für's Prompting
