@@ -192,7 +192,7 @@ knitr::include_graphics("images/neural_network.svg")
 
 - Welche Erfahrung habt Ihr mit ChatGPT in Bezug auf R gemacht?
 - Welche Nachteile könnte ein aktiver Gebrauch von Chat-GPT haben?
-- Wie Reproduzierbar sind Antworten von ChatGPT, was bedeutet das für die Forschung?
+- Wie reproduzierbar sind Antworten von ChatGPT, was bedeutet das für die Forschung?
 
 ## 
 
