@@ -1,0 +1,114 @@
+---
+title: |
+  | GetTogetheR 
+  |
+subtitle: |
+  |
+  | Hausarbeiten mit R-Markdown
+date: | 
+  |
+  | Jonas Frost
+  | jonas.frost@studserv.uni-leipzig.de
+  |
+  | Peter Kannewitz                       
+  | peter.kannewitz@uni-leipzig.de
+  |
+  |              
+  |              
+  |                                                                                                      13. Juli 2023
+fontsize: 9 pt
+output: 
+  beamer_presentation:
+    includes:
+      in_header: preambel.tex
+    latex_engine: lualatex  
+    slide_level: 2
+header-includes: 
+  - \AtBeginDocument{\title[GetTogetheR]{\vspace{1cm} GetTogetheR!}}
+  - \AtBeginDocument{\author[Peter Kannewitz \& Jonas Frost]{ }}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
+```
+
+## Motivation
+
+-   R-Markdown ermöglicht das Erstellen von "schönen" PDF-Dokumenten inkl. Einbindung von Code
+-   durch R-Code generierte Abbildungen und Tabellen werden direkt im Dokument eingefügt
+    -   Analyse und Layout in Einem\
+    -   Automatisches Updaten von Abbildungen und Analyseergebnissen wenn sich Daten ändern
+-   Verbindet Vorteile (und Nachteile) von Markdown und LaTeX
+-   besseres Handling von großen Dokumenten durch WYSIWYAF $\rightarrow$ kein Verschieben von Abbildungen mehr!
+
+## Ablauf
+
+```{=tex}
+\begin{minipage}{\textwidth}
+   \linespread{2}
+   \tableofcontents
+\end{minipage}
+\vspace*{3cm}
+```
+# Überblick: Funktionsweise von R-Markdown PDF
+
+## Pipline
+
+```{r out.width='47%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("images/rmarkdown_workflow.png")
+```
+
+\footnotesize \centering Quelle: <https://hbctraining.github.io/reproducibility-tools/lessons/01-Rmarkdown_basics.html>
+
+## Voraussetzungen
+
+-   RStudio
+-   LaTeX-Distribution (ggf. [TinyTeX](https://yihui.org/tinytex/))
+    -   `install.packages("tinytex")`
+    -   `tinytex::install_tinytex()`
+-   Pakete wie `knitr` und `rmakrdown` werden i.d.R. automatisch installiert
+
+## Neues R-Markdown erstellen
+
+-   File \> New File \> R Markdown \> PDF
+
+## Templates
+
+-   `rtciles`-Paket mit Templates für wiss. Journals
+-   Jonas' Template
+
+## Interessante Anmerkungen
+
+-   .bib-Files und Zitationen in R-Markdown
+-   Formatierung und Styling (sehr viel möglich!)
+-   chunk-options
+    - caching!
+-   visual-Mode
+
+## Kritikpunkte
+
+-   Rechtschreibkontrolle funktioniert nur mäßig gut
+-   man muss erstmal reinkommen
+-   manchmal zeitintensive Problemlösung
+    - bei Problemen braucht man oft TeX-Kenntnisse
+-   Quarto?
+
+## Take-Aways
+
+-   
+
+## Ressourcen
+
+-   <https://github.com/rstudio/rticles>
+-   <https://bookdown.org/yihui/rmarkdown-cookbook/>
+
+# Austausch
+
+## Austausch
+
+## 
+
+\center\huge
+
+Danke fürs Teilnehmen!\
+Wir wünschen Euch eine schöne vorlesungsfreie Zeit!
