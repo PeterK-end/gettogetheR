@@ -39,6 +39,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
     -   Analyse und Layout in Einem\
     -   Automatisches Updaten von Abbildungen und Analyseergebnissen wenn sich Daten ändern
 -   Verbindet Vorteile (und Nachteile) von Markdown und LaTeX
+    -   LaTeX ist Standard für wissenschaftliche Publikationen
 -   besseres Handling von großen Dokumenten durch WYSIWYAF $\rightarrow$ kein Verschieben von Abbildungen mehr!
 
 ## Ablauf
