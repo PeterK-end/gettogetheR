@@ -34,11 +34,11 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 
 ## Motivation
 
--   R-Markdown ermöglicht das Erstellen von "schönen" PDF-Dokumenten inkl. Einbindung von Code
--   durch R-Code generierte Abbildungen und Tabellen werden direkt im Dokument eingefügt
+-   R-Markdown ermöglicht das Erstellen von anspruchsvoll formatierten PDF-Dokumenten inkl. Einbindung von Code
+-   R-Abbildungen und Tabellen werden direkt im Dokument eingefügt
     -   Analyse und Layout in Einem\
     -   Automatisches Updaten von Abbildungen und Analyseergebnissen wenn sich Daten ändern
--   Verbindet Vorteile (und Nachteile) von Markdown und LaTeX
+-   Verbindet Vorteile (und Nachteile) von Markdown, LaTeX und R
     -   LaTeX ist Standard für wissenschaftliche Publikationen
 -   besseres Handling von großen Dokumenten durch WYSIWYAF $\rightarrow$ kein Verschieben von Abbildungen mehr!
 
@@ -64,10 +64,23 @@ knitr::include_graphics("images/rmarkdown_workflow.png")
 ## Voraussetzungen
 
 -   RStudio
--   LaTeX-Distribution (ggf. [TinyTeX](https://yihui.org/tinytex/))
+-   LaTeX-Distribution installiert (ggf. [TinyTeX](https://yihui.org/tinytex/))
     -   `install.packages("tinytex")`
     -   `tinytex::install_tinytex()`
 -   Pakete wie `knitr` und `rmakrdown` werden i.d.R. automatisch installiert
+
+## \LaTeX
+
+- LaTeX ist ein High Level Markup und Makro System für Typesetting
+  - wurde 1984 veröffentlicht
+- Bietet unzählige Möglichkeiten zur Formatierung, ist aber auch deutlich komplexer als Markdown
+- ist für einfache Dokumente nicht zwingend notwendig
+
+## 
+
+\center
+\Large
+Wer von Euch nutzt bereits R-Markdown?
 
 ## Neues R-Markdown erstellen
 
@@ -89,7 +102,7 @@ knitr::include_graphics("images/rmarkdown_workflow.png")
 ## Kritikpunkte
 
 -   Rechtschreibkontrolle funktioniert nur mäßig gut
--   man muss erstmal reinkommen
+-   man muss erst einmal reinkommen
 -   manchmal zeitintensive Problemlösung
     - bei Problemen braucht man oft TeX-Kenntnisse
 -   Quarto?
@@ -100,12 +113,19 @@ knitr::include_graphics("images/rmarkdown_workflow.png")
 
 ## Ressourcen
 
--   <https://github.com/rstudio/rticles>
--   <https://bookdown.org/yihui/rmarkdown-cookbook/>
+-   \textcolor{blue}{\url{https://quarto.org/docs/authoring/markdown-basics.html}} (Markdown Basics)
+- \textcolor{blue}{\url{https://bookdown.org/yihui/rmarkdown-cookbook/}} ("Rezepte")
+
+-   \textcolor{blue}{\url{https://bookdown.org/yihui/rmarkdown/}} (R Markdown: The Definitive Guide)
+-   \textcolor{blue}{\url{https://github.com/rstudio/rticles}} (Templates im Stil von Journalen)
 
 # Austausch
 
 ## Austausch
+
+- Habt Ihr schon einmal eine Arbeit in R-Markdown geschrieben?
+- Würdet Ihr jetzt, nach dem Input, ein Arbeit in R-Mardown schreiben? Wenn nein, was schreckt Euch ab?
+- Welche R-Mardown Probleme habt ihr noch nicht lösen können?
 
 ## 
 
