@@ -1,0 +1,282 @@
+---
+output: 
+  bookdown::pdf_document2:
+    extra_dependencies:
+      setspace: ["onehalfspacing"]
+      inputenc: ["utf8"]
+      fancyhdr: []
+      lastpage: []
+      geometry: []
+      array: []
+      placeins: []
+      appendix: ["toc,page,header"]
+      minitoc: ["dotted"]
+      dsfont: []
+      amsmath: []
+      changepage: []
+      csquotes: ["style=german"]
+    includes:       
+      before_body: Titelblatt.tex
+    toc: no
+    number_sections: yes
+bibliography: ../Literatur.bib 
+lang: de
+csl: ../zfs.csl
+fontsize: 12pt
+indent: yes
+link-citations: yes
+papersize: a4
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.width = 8, fig.height = 4, cache = TRUE)
+```
+
+```{r setup2, include = FALSE, cache = FALSE}
+library("knitr")
+library("tidyverse")
+library("stargazer")
+
+theme_set(theme_bw())
+options(knitr.table.format = "latex", OutDec = ",")
+```
+
+```{=latex}
+\renewcommand \thepart{}
+\renewcommand \partname{}
+\renewcommand \ptctitle{Inhaltsverzeichnis}
+\renewcommand \plftitle{Abbildungsverzeichnis}
+\renewcommand \plttitle{Tabellenverzeichnis}
+\renewcommand{\figurename}{Abbildung}
+\renewcommand{\tablename}{Tabelle}
+
+
+\doparttoc
+\faketableofcontents
+\dopartlot
+\fakelistoftables
+\dopartlof
+\fakelistoffigures
+\noptcrule
+
+\thispagestyle{empty}
+\vspace*{-3cm}
+\part{}
+\parttoc
+
+\newpage
+\thispagestyle{empty}
+
+\partlof
+\vspace*{1cm}
+\partlot
+
+\newpage
+\thispagestyle{empty}
+
+\noindent \textbf{Abstract:} \\
+Die vorliegende Arbeit untersucht ... 
+
+\vspace*{0.6cm}
+
+\noindent \textbf{Abkürzungen:}  \vspace*{-0.2cm}
+\begin{small}
+  \begin{description}
+    \setlength\itemsep{0em}
+    \item \textbf{RCT:} Rational Choice Theorie
+    \item \textbf{SES:} Sozialökonomischer Status
+    \item \textbf{SOEP:} Sozioökonomisches Panel
+  \end{description}
+\end{small}
+
+\vspace*{0.6cm}
+
+\noindent\textbf{Hinweis:} \\
+Aus Gründen der leichteren Lesbarkeit wird in der vorliegenden Arbeit die männliche Sprachform bei personenbezogenen Substantiven und Pronomen verwendet. Dies impliziert jedoch keine Benachteiligung des weiblichen Geschlechts, sondern soll im Sinne der sprachlichen Vereinfachung als geschlechtsneutral zu verstehen sein.
+
+\vspace*{0.6cm}  
+
+
+\newpage
+\setcounter{page}{1}
+\newgeometry{
+top=25mm,
+bottom=25mm,
+right= 30mm,
+left=30mm,
+headsep=6mm}
+\setlength{\headheight}{13.59999pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small{Vorname Name}}
+\chead{}
+\rhead{\small{\nouppercase{\leftmark}}} 
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage \hspace{0.3cm}}
+```
+
+
+
+# Einleitung
+
+
+\newpage
+
+# Haupteil
+
+Hier kann man etwas zitieren [@Tutic.2020b].
+
+## Theorie
+
+## Daten
+
+## Ergebnisse
+
+```{r message=FALSE, fig.cap="lm-Schätzung"}
+data <- tibble(
+  alter = floor(runif(100, min = 18, max = 80)),
+  einkommen = rnorm(100, mean = 3000, sd = 1000)*(alter*rnorm(100, mean = 1, sd = 0.5)/mean(alter))
+)
+
+data |>
+  ggplot(
+    mapping = aes(x = alter,
+                  y = einkommen)
+  ) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+```{r tab1, include=FALSE}
+mod1 <- lm(formula = einkommen ~ alter,
+           data = data) 
+
+options(OutDec = ".")
+
+tab1 <-
+  stargazer(
+    mod1,
+    header = FALSE,
+    digit.separator = " ",
+    decimal.mark = ",",
+    no.space = FALSE,
+    column.sep.width = "3pt",
+    font.size = "small",
+    dep.var.labels = "Einkommen",
+    dep.var.caption = "Abhängige Variable:",
+    covariate.labels = c("Intercept", "Alter"),
+    notes.append = TRUE,
+    notes.label = "Hinweise:",
+    notes = c("Daten wurden simuliert"),
+    omit = "^syear",
+    model.names = FALSE,
+    model.numbers = TRUE,
+    report = "vc*",
+    single.row = FALSE,
+    title = "Modellparameter",
+    omit.stat = c("wald", "lr", "logrank"),
+    table.placement = "h",
+    intercept.top = TRUE,
+    intercept.bottom = FALSE
+  )
+```
+
+```{r reg_tab1, results='asis', cache=FALSE}
+tab1 |>
+  str_replace("Observations", "N") |>
+  cat()
+```
+
+
+\newpage
+
+# Diskussion
+
+\newpage
+
+# Literaturverzeichnis
+
+\interlinepenalty=10000
+
+<div id="refs"></div>
+
+\newpage
+
+```{=latex}
+\addcontentsline{toc}{section}{Appendix}
+\part{Appendix} % Start the appendix part
+\setcounter{page}{1}
+\pagenumbering{roman}
+
+\parttoc
+
+\newpage
+\rhead{\small{Appendix}} 
+
+\partlof
+\vspace*{1cm}
+\partlot
+
+\newpage
+
+\interlinepenalty=0
+```
+
+# Weitere Modelle {-}
+
+```{r message=FALSE, fig.cap="LOESS-Schätzung"}
+data |>
+  ggplot(
+    mapping = aes(x = alter,
+                  y = einkommen)
+  ) +
+  geom_point() +
+  geom_smooth()
+```
+
+```{r tab, include=FALSE}
+mod2 <- data |>
+  mutate(
+    alter2 = alter^2
+    ) |>
+  lm(formula = einkommen ~ alter + alter2,
+     data = _)  
+
+options(OutDec = ".")
+
+tab2 <-
+  stargazer(
+    mod1,
+    mod2,
+    header = FALSE,
+    digit.separator = " ",
+    decimal.mark = ",",
+    no.space = FALSE,
+    column.sep.width = "3pt",
+    font.size = "small",
+    dep.var.labels = "Einkommen",
+    dep.var.caption = "Abhängige Variable:",
+    covariate.labels = c("Intercept", "Alter", "Alter*Alter"),
+    notes.append = TRUE,
+    notes.label = "Hinweise:",
+    notes = c("Daten wurden simuliert"),
+    omit = "^syear",
+    model.names = FALSE,
+    model.numbers = TRUE,
+    report = "vc*",
+    single.row = FALSE,
+    title = "Vergleich der Modelle",
+    omit.stat = c("wald", "lr", "logrank"),
+    table.placement = "h",
+    intercept.top = TRUE,
+    intercept.bottom = FALSE
+  )
+```
+
+```{r reg_tab2, results='asis', cache=FALSE}
+tab2 |>
+  str_replace("Observations", "N") |>
+  cat()
+```
+
