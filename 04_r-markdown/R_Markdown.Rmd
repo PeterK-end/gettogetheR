@@ -82,6 +82,8 @@ knitr::include_graphics("images/rmarkdown_workflow.png")
 \Large
 Wer von Euch nutzt bereits R-Markdown?
 
+# Wir zeigen's Euch!
+
 ## Neues R-Markdown erstellen
 
 -   File \> New File \> R Markdown \> PDF
@@ -109,7 +111,11 @@ Wer von Euch nutzt bereits R-Markdown?
 
 ## Take-Aways
 
--   
+-   mit R-Markdown ist **sehr viel** möglich (auch Präsentationen, html-Dashboards ...)
+-   mit Hilfe von Vorlagen kann man gut einsteigen und auch schon viel erreichen
+-   wenn bestimmte Formatierungsvorstellungen oder -probleme, wird es manchmal kompliziert
+-   Markdown + LaTeX machen Formatierungen sowohl einfacher als auch komplizierter
+-   Analyse und Schreiben in einem: anderer Workflow! 
 
 ## Ressourcen
 
