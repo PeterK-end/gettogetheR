@@ -42,6 +42,10 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
     -   LaTeX ist Standard für wissenschaftliche Publikationen
 -   Besseres Handling von großen Dokumenten durch WYSIWYAF $\rightarrow$ kein Verschieben von Abbildungen mehr!
 
+### Neues R-Markdown erstellen
+
+File \> New File \> R Markdown \> PDF
+
 ## Ablauf
 
 ```{=tex}
@@ -69,14 +73,14 @@ knitr::include_graphics("images/rmarkdown_workflow.png")
     -   `tinytex::install_tinytex()`
 -   Pakete wie `knitr` und `rmakrdown` werden i.d.R. automatisch installiert
 
-## \LaTeX
+## LaTeX
 
 - LaTeX ist ein High Level Markup und Makro System für Typesetting
   - wurde 1984 veröffentlicht
 - Bietet unzählige Möglichkeiten zur Formatierung, ist aber auch deutlich komplexer als Markdown
 - ist für einfache Dokumente nicht zwingend notwendig
  
-Beispiel \LaTeX-code:
+Beispiel LaTeX-Code:
 ```{latex, eval=FALSE}
 \documentclass[a4paper,12pt]{article}
 \input{packages and commands}
