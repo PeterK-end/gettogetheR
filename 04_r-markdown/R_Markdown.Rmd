@@ -40,7 +40,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
     -   Automatisches Updaten von Abbildungen und Analyseergebnissen wenn sich Daten ändern
 -   Verbindet Vorteile (und Nachteile) von Markdown, LaTeX und R
     -   LaTeX ist Standard für wissenschaftliche Publikationen
--   besseres Handling von großen Dokumenten durch WYSIWYAF $\rightarrow$ kein Verschieben von Abbildungen mehr!
+-   Besseres Handling von großen Dokumenten durch WYSIWYAF $\rightarrow$ kein Verschieben von Abbildungen mehr!
 
 ## Ablauf
 
@@ -75,6 +75,21 @@ knitr::include_graphics("images/rmarkdown_workflow.png")
   - wurde 1984 veröffentlicht
 - Bietet unzählige Möglichkeiten zur Formatierung, ist aber auch deutlich komplexer als Markdown
 - ist für einfache Dokumente nicht zwingend notwendig
+ 
+Beispiel \LaTeX-code:
+```{latex, eval=FALSE}
+\documentclass[a4paper,12pt]{article}
+\input{packages and commands}
+
+\begin{document}
+	\input{einleitung}
+	\input{methode}
+	\input{ergebnisse}
+	\input{diskussion}
+	\printbibliography
+\end{document}
+```
+
 
 ## 
 
@@ -107,7 +122,7 @@ Wer von Euch nutzt bereits R-Markdown?
 -   man muss erst einmal reinkommen
 -   manchmal zeitintensive Problemlösung
     - bei Problemen braucht man oft TeX-Kenntnisse
--   Quarto?
+-   \textcolor{blue}{\href{https://quarto.org/}{Quarto}}?
 
 ## Take-Aways
 
