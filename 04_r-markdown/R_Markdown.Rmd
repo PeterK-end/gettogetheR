@@ -42,9 +42,18 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
     -   LaTeX ist Standard für wissenschaftliche Publikationen
 -   Besseres Handling von großen Dokumenten durch WYSIWYAF $\rightarrow$ kein Verschieben von Abbildungen mehr!
 
+## 
+
+\center
+\Large
+Wer von Euch nutzt bereits R-Markdown?
+
+\vfill
+
 ### Neues R-Markdown erstellen
 
 File \> New File \> R Markdown \> PDF
+
 
 ## Ablauf
 
@@ -95,17 +104,7 @@ Beispiel LaTeX-Code:
 ```
 
 
-## 
-
-\center
-\Large
-Wer von Euch nutzt bereits R-Markdown?
-
 # Wir zeigen's Euch!
-
-## Neues R-Markdown erstellen
-
--   File \> New File \> R Markdown \> PDF
 
 ## Templates
 
@@ -151,6 +150,12 @@ Wer von Euch nutzt bereits R-Markdown?
 - Habt Ihr schon einmal eine Arbeit in R-Markdown geschrieben?
 - Würdet Ihr jetzt, nach dem Input, ein Arbeit in R-Mardown schreiben? Wenn nein, was schreckt Euch ab?
 - Welche R-Mardown Probleme habt ihr noch nicht lösen können?
+
+##
+
+```{r echo=FALSE, fig.align='center', out.height="80%"}
+knitr::include_graphics("images/Aushang_Auffrischungskurs.pdf")
+```
 
 ## 
 
